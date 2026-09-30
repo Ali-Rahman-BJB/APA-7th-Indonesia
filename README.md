@@ -1,64 +1,89 @@
-# APA 7th Edition for Microsoft Word
+# APA 7th Edition Indonesia untuk Microsoft Word
 
-Until (unless) Microsoft gets around to adding a template for the latest version, this is the APA 7th Edition XSLT modified by Mike Slagle, plus the two additional fixes posted in the comments found [here](https://answers.microsoft.com/en-us/msoffice/forum/all/apa-7th-edition-in-ms-word/486fc70e-b7c7-40df-89bb-f8fc07169d40). This way, if other changes are needed, this file can be updated.
+Gaya sitasi **APA edisi ke-7 (versi Indonesia)** untuk Microsoft Word. Setelah dipasang, gaya ini muncul di Word dengan nama **"APA7 Indonesia"** pada menu *Referensi (References) > Gaya (Style)*.
 
-**IMPORTANT**: These files are provided as a courtesy to those needing a better option for APA 7 than what Microsoft currently provides. I did not create the template. If there are issues, take the time to make the changes necessary (if possible; there are limitations to what can be done) and submit a pull request.
+Repositori ini dikelola oleh **Ali Rahman** sebagai pemilik dan *maintainer*. Repositori ini adalah *fork* dari [APA-7th-Edition](https://github.com/briankavanaugh/APA-7th-Edition) milik Brian Kavanaugh, yang kemudian disesuaikan untuk pengguna Indonesia.
 
-## How to Use
+## Tentang Repositori Ini
+
+- **Pemilik & maintainer:** Ali Rahman
+- **Sumber fork:** [briankavanaugh/APA-7th-Edition](https://github.com/briankavanaugh/APA-7th-Edition) (Copyright (c) 2021 Brian Kavanaugh)
+- **Dasar berkas XSLT:** APA 7th Edition XSLT hasil modifikasi Mike Slagle, ditambah dua perbaikan dari komentar pada [forum Microsoft Answers ini](https://answers.microsoft.com/en-us/msoffice/forum/all/apa-7th-edition-in-ms-word/486fc70e-b7c7-40df-89bb-f8fc07169d40)
+- **Perubahan di repositori ini:**
+  - Gaya sitasi diberi nama **"APA7 Indonesia"**
+  - Skrip pemasang (`.bat` untuk Windows dan `.sh` untuk macOS) berbahasa Indonesia
+  - Skrip memasang berkas `.xsl` **lokal** yang ada di folder yang sama, bukan mengunduhnya dari internet
+  - Skrip macOS memvalidasi XML sebelum memasang dan mendukung opsi `--persist`
+
+> **Penting:** Berkas gaya ini disediakan sebagai bantuan bagi yang membutuhkan opsi APA 7 yang lebih baik daripada bawaan Microsoft. Templat XSLT aslinya **bukan** buatan saya. Bila ada masalah, silakan perbaiki (bila memungkinkan; ada batasan pada apa yang bisa dilakukan XSLT di Word) lalu kirim *pull request*.
+
+## Cara Penggunaan
 
 ### Windows
 
-#### Manual Method
+#### Metode manual
 
-1. Exit Word
-2. Using Windows Explorer, copy the file APASeventhEdition.xsl to C:\Users\<your_user_name>\AppData\Roaming\Microsoft\Bibliography\Style
-3. Restart Word and from the References tab in Word, you should be able to choose APA7.
+1. Tutup Word.
+2. Salin berkas `APASeventhEdition.xsl` ke folder:
+   `C:\Users\<nama_pengguna>\AppData\Roaming\Microsoft\Bibliography\Style`
+3. Buka kembali Word, lalu pada tab **Referensi** pilih gaya **APA7 Indonesia**.
 
-#### Bat file method / Cmd method
+#### Metode berkas `.bat`
 
-1. Exit word
-2. Copy the APASeventhEdition.bat file and allow it to run.
-3. Restart Word and from the References tab in Word, you should be able to choose APA7.
+1. Tutup Word.
+2. Letakkan `APASeventhEdition.bat` **satu folder** dengan `APASeventhEdition.xsl`, lalu klik dua kali.
+3. Buka kembali Word, lalu pada tab **Referensi** pilih gaya **APA7 Indonesia**.
 
-Note: The bat file simply runs the following line:
+Catatan: berkas `.bat` menyalin `APASeventhEdition.xsl` dari folder yang sama ke `%appdata%\Microsoft\Bibliography\Style`. Tidak ada proses unduhan dari internet.
 
-```bash
-curl https://raw.githubusercontent.com/briankavanaugh/APA-7th-Edition/main/APASeventhEdition.xsl -o "%appdata%\Microsoft\Bibliography\Style\APASeventhEdition.xsl"
-```
+### macOS
 
-### MacOS
+#### Metode manual
 
-#### Manual method
+1. Tutup Word.
+2. Lewat Finder, salin `APASeventhEdition.xsl` ke **dua** lokasi:
+   1. `HD/Applications/Microsoft Word.app/Contents/Resources/Style/` (klik kanan pada ikon aplikasi, lalu pilih "Show Package Contents")
+   2. `HD/Users/<nama_pengguna>/Library/Containers/com.microsoft.Word/Data/Library/Application Support/Microsoft/Office/Style/`
+3. Buka kembali Word, lalu pada tab **Referensi** pilih gaya **APA7 Indonesia**.
 
-1. Exit Word
-2. Using Finder, copy the file APASeventhEdition.xsl to *two* locations:
-    1. HD/Applications/Microsoft Word.app/Contents/Resources/Style/ (note that you will have to right-click and "View Contents" on the app icon at HD/Applications/Microsoft Word.app/)
-    2. HD/Users/\<your_user_name>/Library/Containers/com.microsoft.Word/Data/Library/Application Support/Microsoft/Office/Style/
-3. Restart Word and from the References tab in Word, you should be able to choose APA7.
+#### Metode skrip Terminal
 
-#### Shell script method / terminal method
+* **Skrip ini meminta hak administrator dengan `sudo`. Jalankan hanya berkas yang Anda percaya dan pahami isinya.**
 
-* **The file asks for elevated priveliges using `sudo`. Only run files you trust and understand the contents of.**
+1. Tutup Word sepenuhnya.
+2. Letakkan `APASeventhEdition.sh` **satu folder** dengan `APASeventhEdition.xsl`.
+3. Buka Terminal (cari lewat Spotlight).
+4. Masuk ke folder tersebut: `cd /path/ke/folder`
+5. Jalankan skrip:
+   1. `bash APASeventhEdition.sh`
+   2. Masukkan kata sandi saat diminta. Layar tidak menampilkan apa pun saat Anda mengetik; tekan Enter setelah selesai.
+   3. Berkas akan disalin ke kedua lokasi Word.
+   4. *Opsional:* jalankan dengan opsi `--persist` agar berkas otomatis dipasang ulang saat *reboot* atau setelah Word diperbarui (mengatasi masalah Microsoft AutoUpdate yang menghapus berkas): `bash APASeventhEdition.sh --persist`
 
-1. Exit word and ensure it is closed before proceeding
-2. Copy the `APASeventhEdition.sh` file to a local folder
-3. Open the terminal (Search "Terminal through spotlight)
-4. Navigate to the folder containing the shell script
-    1. `cd /path/to/your/file`
-5. Run the script
-    1. `bash APASeventhEdition.sh`
-    2. Enter password when prompted. The terminal stay blank while password is entered. Once entered, press enter
-    3. The files should be placed in their corresponding folders
-    4. *Optionally:* run the script with the `--persist` flag to create a LaunchDaemon. The LaunchDaemon will copy the files into their respective folders at reboot to combat issue where Microsoft AutoUpdater removes the files: `bash APASeventhEdition.sh --persist`.
+Catatan:
 
-Notes:  
+* Skrip menyimpan salinan lokal di `/Library/Application Support/APAStyleTool`, lalu menyalinnya ke dua folder Word.
+* Bila Terminal gagal menyalin ke dalam `Microsoft Word.app`, beri izin di *Pengaturan Sistem > Privasi & Keamanan > Manajemen Aplikasi* (atau *Akses Disk Penuh*), lalu ulangi.
+* Opsi `--persist` membuat LaunchDaemon yang berjalan saat *boot* dengan hak *root* dan memantau `Info.plist` Word. **Selalu baca skrip sebelum menjalankannya.**
+* Untuk menghapus LaunchDaemon:
+  `sudo launchctl bootout system /Library/LaunchDaemons/com.apastyle.copy.plist && sudo rm /Library/LaunchDaemons/com.apastyle.copy.plist "/Library/Application Support/APAStyleTool/apply.sh"`
+* Log: `tail -f /var/log/apastylecopy.log`
 
-* The bash file will use the `curl` command to retrieve the file from github at the specified link and place it in `/Library/Application Support/APAStyleTool`.
-* Then it will copy the stylesheet into the two specified folders.
-* If the `--persist` flag is used a LaunchDaemon is created. This will copy the file from the `/Library/Application Support/APAStyleTool` folder to the two Word-folders every time the computer is rebooted.
-* Be aware, that the LaunchDaemon is run at boot and has root privileges to avoid user interaction. **Always read the script before running it.**
-* I do not have a Mac to test this on. The script was run successfully on a Mac with Office installed.
+## Kontribusi
 
-## Disclaimer
+Saran, laporan masalah (*issue*), dan *pull request* sangat diterima. Karena keterbatasan XSLT pada Word, tidak semua aturan APA 7 dapat diterapkan sempurna.
 
-(same as Mike's) I am only providing this file and the necessary location for it for education purposes. If any installations of MS Office are corrupted as a result of using this file, I am not responsible to address or repair any issues.
+## Kredit
+
+- **Brian Kavanaugh**, pembuat repositori asli (Copyright (c) 2021 Brian Kavanaugh)
+- **Mike Slagle**, modifikasi APA 7th Edition XSLT
+- Kontributor komentar di forum Microsoft Answers atas dua perbaikan tambahan
+- **Ali Rahman**, pemilik dan *maintainer* repositori APA 7th Indonesia ini
+
+## Lisensi
+
+Repositori ini mengikuti lisensi dari repositori asli. Lihat berkas `LICENSE` untuk detailnya, dan hak cipta asli tetap dipertahankan atas nama Brian Kavanaugh.
+
+## Penafian
+
+Berkas ini disediakan hanya untuk tujuan edukasi beserta lokasi penempatannya. Bila instalasi Microsoft Office rusak akibat penggunaan berkas ini, saya tidak bertanggung jawab untuk memperbaiki masalah tersebut.
