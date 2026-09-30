@@ -196,60 +196,10 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_OnlineCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Daring</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_OnlineUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>daring</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_FiledCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Diajukan</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_PatentFiledCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Paten diajukan</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_InCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Dalam</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_OnAlbumTitleCap" >
     <xsl:param name="LCID" />
@@ -274,82 +224,12 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_WithUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>dengan</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_VersionShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Versi</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_InterviewCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Wawancara</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_InterviewWithCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Wawancara dengan</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_InterviewByCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Wawancara oleh</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ByCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Oleh</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_AndUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>dan</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_AndOthersUnCap" >
     <xsl:param name="LCID" />
@@ -373,16 +253,6 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_PatentCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Paten %1</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_EditionShortUnCap" >
     <xsl:param name="LCID" />
@@ -395,16 +265,6 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_EditionUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>edisi</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_RetrievedFromCap" >
     <xsl:param name="LCID" />
@@ -442,16 +302,6 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_FromUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>dari</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_NoDateShortUnCap" >
     <xsl:param name="LCID" />
@@ -464,27 +314,7 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_NumberShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>No.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_NumberShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>no.</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_PatentNumberShortCap" >
     <xsl:param name="LCID" />
@@ -519,60 +349,10 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_SineNomineShort" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>s.n.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_SineLocoShort" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>s.l.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_SineLocoSineNomineShort" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>s.l.: s.n.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_VolumeOfShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Vol. %1 dari %2</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_VolumesOfShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Vol. %1 dari %2</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_VolumeShortCap" >
     <xsl:param name="LCID" />
@@ -618,49 +398,9 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_VolumeCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Volume</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_AuthorShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>penulis</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_BookAuthorShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>penulis buku</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ArtistShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>seniman</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_WriterCap" >
     <xsl:param name="LCID" />
@@ -684,148 +424,18 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_WriterShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>penulis</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ConductedByCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Dipimpin oleh</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ConductedByUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>dipimpin oleh</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ConductorCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Konduktor</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ConductorsCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Konduktor</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ConductorShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Kond.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ConductorShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>kond.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ConductorsShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Kond.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ConductorsShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>kond.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_CounselShortUnCapIso" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>penasihat hukum</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_CounselShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>penasihat hukum</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_DirectedByCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Disutradarai oleh</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_DirectedByUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>disutradarai oleh</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_DirectorCap" >
     <xsl:param name="LCID" />
@@ -849,71 +459,11 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_DirectorShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Sutr.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_DirectorShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>sutr.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_DirectorsShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Sutr.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_DirectorsShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>sutr.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_EditedByCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Disunting oleh</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_EditedByUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>disunting oleh</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_EditorCap" >
     <xsl:param name="LCID" />
@@ -948,16 +498,6 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_EditorShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>ed.</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_EditorsShortCap" >
     <xsl:param name="LCID" />
@@ -970,27 +510,7 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_EditorsShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>eds.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_IntervieweeShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>narasumber</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_InterviewerCap" >
     <xsl:param name="LCID" />
@@ -1014,38 +534,8 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_InventorShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>penemu</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_PerformedByCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Dibawakan oleh</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_PerformedByUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>dibawakan oleh</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_PerformerCap" >
     <xsl:param name="LCID" />
@@ -1069,71 +559,11 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_PerformerShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Penampil</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_PerformerShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>penampil</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_PerformersShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Penampil</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_PerformersShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>penampil</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ProducedByCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Diproduksi oleh</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ProducedByUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>diproduksi oleh</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_ProducerCap" >
     <xsl:param name="LCID" />
@@ -1157,49 +587,9 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_ProductionCompanyShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Perusahaan produksi</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ProducerShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Prod.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ProducersShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Prod.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ProducerShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>prod.</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_RecordedByCap" >
     <xsl:param name="LCID" />
@@ -1212,27 +602,7 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_TranslatedByCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Diterjemahkan oleh</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_TranslatedByUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>diterjemahkan oleh</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_TranslatorCap" >
     <xsl:param name="LCID" />
@@ -1267,16 +637,6 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_TranslatorShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>penerj.</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_TranslatorsShortCap" >
     <xsl:param name="LCID" />
@@ -1289,93 +649,13 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_TranslatorsShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>penerj.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ComposerCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Komposer</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ComposersCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Komposer</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ComposerShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Komp.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ComposersShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Komp.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_ComposerShortUnCapIso" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>komp.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_CompiledByCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Disusun oleh</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_CompiledByUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>disusun oleh</xsl:text>
-  </xsl:template>
-
   
   <xsl:template name="templ_str_CompilerCap" >
     <xsl:param name="LCID" />
@@ -1399,85 +679,15 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_CompilerShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Peny.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_CompilerShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>peny.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_CompilersShortCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>Peny.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_CompilersShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>peny.</xsl:text>
-  </xsl:template>
-
   
-  <xsl:template name="templ_str_CompilerShortUnCapIso" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:text>peny.</xsl:text>
-  </xsl:template>
-
 
   
 
   
-  <xsl:template name="templ_prop_Culture" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/@Culture"/>
-  </xsl:template>
-
   
-  <xsl:template name="templ_prop_Direction" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Properties/b:Direction"/>
-  </xsl:template>
-
 
   
 
@@ -1549,16 +759,6 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_prop_NonBreakingSpace" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:NonBreakingSpace"/>
-  </xsl:template>
-
   
   <xsl:template name="templ_prop_ListSeparator" >
     <xsl:param name="LCID" />
@@ -1623,16 +823,6 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_prop_Equal" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:Equal"/>
-  </xsl:template>
-
   
   <xsl:template name="templ_prop_Enum" >
     <xsl:param name="LCID" />
@@ -1689,38 +879,8 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_prop_FromToDash" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:FromToDash"/>
-  </xsl:template>
-
   
-  <xsl:template name="templ_prop_OpenLink" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:OpenLink"/>
-  </xsl:template>
-
   
-  <xsl:template name="templ_prop_CloseLink" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:CloseLink"/>
-  </xsl:template>
-
   
   <xsl:template name="templ_prop_AuthorsSeparator" >
     <xsl:param name="LCID" />
@@ -1772,17 +932,7 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_prop_SimpleDate_D" >
-  <xsl:text>%D</xsl:text>
   
-  </xsl:template>
-
-  
-  <xsl:template name="templ_prop_SimpleDate_M" >
-  <xsl:text>%M</xsl:text>
-  
-  </xsl:template>
-
   
   <xsl:template name="templ_prop_SimpleDate_Y" >
   <xsl:text>%Y</xsl:text>
@@ -6093,21 +5243,6 @@
 
   </xsl:template>
 
-  <xsl:template name="copyNodes2">
-    <xsl:for-each select="@*">
-      <xsl:attribute name="{name()}" namespace="{namespace-uri()}">
-        <xsl:value-of select="."/>
-      </xsl:attribute>
-    </xsl:for-each>
-    <xsl:for-each select="*">
-      <xsl:element name="{name()}" namespace="{namespace-uri()}">
-        <xsl:call-template name="copyNodes2"/>
-        
-      </xsl:element>
-    </xsl:for-each>
-
-  </xsl:template>
-
   <xsl:template name="handleSpaces">
     <xsl:param name="field"/>
 
@@ -6181,31 +5316,6 @@
       </xsl:otherwise>
     </xsl:choose>
 
-  </xsl:template>
-
-  <xsl:template name="templateCSC">
-
-    <xsl:variable name="tempSPCR">
-      <xsl:call-template name="templateC2">
-        <xsl:with-param name="first" select="b:StateProvince"/>
-        <xsl:with-param name="second" select="b:CountryRegion"/>
-      </xsl:call-template>
-    </xsl:variable>
-
-    <xsl:variable name="city">
-      <xsl:call-template name="handleSpaces">
-        <xsl:with-param name="field" select="b:City"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:variable name="temp">
-      <xsl:call-template name="templateC">
-        <xsl:with-param name="first" select="$city"/>
-        <xsl:with-param name="second" select="$tempSPCR"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:call-template name="handleSpaces">
-      <xsl:with-param name="field" select="$temp"/>
-    </xsl:call-template>
   </xsl:template>
 
   <xsl:template name="templateCSC2">
@@ -6972,46 +6082,6 @@
     <xsl:call-template name="templateB">
       <xsl:with-param name="first" select="b:CountryRegion"/>
       <xsl:with-param name="second" select="b:Distributor"/>
-    </xsl:call-template>
-  </xsl:template>
-
-  <xsl:template name="templateCPPn">
-    <xsl:variable name="patentTemp">
-      <xsl:call-template name="handleSpaces">
-        <xsl:with-param name="field" select="b:PatentNumber"/>
-      </xsl:call-template>
-    </xsl:variable>
-
-    <xsl:variable name="str_PatentCap">
-      <xsl:call-template name="templ_str_PatentCap"/>
-    </xsl:variable>
-
-    <xsl:variable name="patent">
-      <xsl:choose>
-        <xsl:when test="string-length($patentTemp)>0">
-          <xsl:call-template name="StringFormat">
-            <xsl:with-param name="format" select="$str_PatentCap"/>
-            <xsl:with-param name="parameters">
-              <t:params>
-                <t:param>
-                  <xsl:value-of select="$patentTemp"/>
-                </t:param>
-              </t:params>
-            </xsl:with-param>
-          </xsl:call-template>
-        </xsl:when>
-      </xsl:choose>
-    </xsl:variable>
-    <xsl:call-template name="templateB">
-      <xsl:with-param name="first" select="b:CountryRegion"/>
-      <xsl:with-param name="second" select="$patent"/>
-    </xsl:call-template>
-  </xsl:template>
-
-  <xsl:template name="templateCC">
-    <xsl:call-template name="templateB">
-      <xsl:with-param name="first" select="b:CountryRegion"/>
-      <xsl:with-param name="second" select="b:Court"/>
     </xsl:call-template>
   </xsl:template>
 
@@ -8148,21 +7218,6 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>	
-
-	<xsl:template name="PrintSpaceAndList">
-		<xsl:param name="list"/>
-
-		<xsl:variable name="result">
-			<xsl:call-template name="PrintList">
-				<xsl:with-param name="list" select="$list" />
-			</xsl:call-template>
-		</xsl:variable>
-
-		<xsl:if test="string-length($result) > 0">
-			<xsl:call-template name="templ_prop_Space" />
-			<xsl:copy-of select="$result" />
-		</xsl:if>
-	</xsl:template>
 
 	<xsl:template name="PrintList">
 		<xsl:param name="list"/>
